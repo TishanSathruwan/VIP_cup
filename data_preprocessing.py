@@ -24,7 +24,7 @@ def process_images(csv_dir):
 
     for i in tqdm(range(0,len(df))):
         path = df.iloc[i,0]
-        im = Image.open(path).convert('L')
+        im = Image.open(path).convert('RGB') #change here "L"
 
 
 def numpy_submission(sub_dir,np_dir):

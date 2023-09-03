@@ -33,8 +33,8 @@ def set_model(opt):
 def set_loader(opt):
     # construct data loader
     if opt.dataset == 'OLIVES' or opt.dataset == 'RECOVERY':
-        mean = (.1706)
-        std = (.2112)
+        mean = (.1706,.1706,.1706)
+        std = (.2112,.2112,.2112)
     else:
         raise ValueError('dataset not supported: {}'.format(opt.dataset))
 
